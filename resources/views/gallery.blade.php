@@ -67,8 +67,8 @@
                         <img src="{{ asset('frontend_asset') }}/images/poultry-feed-5.jpg" alt="">
                         <div class="gallery-hvr whitecolor">
                             <div class="center-box">
-                                <a href="images/gallery-1.jpg" class="opens" data-fancybox="gallery" title="Zoom In"> <i class="fa fa-search-plus"></i></a>
-                                <a href="gallery-detail.html" class="opens" title="View Details"> <i class="fas fa-link"></i></a>
+                                <a href="{{ asset('frontend_asset') }}/images/gallery-1.jpg" class="opens" data-fancybox="gallery" title="Zoom In"> <i class="fa fa-search-plus"></i></a>
+                                <a href="{{ route('gallerydetail') }}" class="opens" title="View Details"> <i class="fas fa-link"></i></a>
                                 <h4 class="w-100">Rainy Outdoor</h4>
                             </div>
                         </div>

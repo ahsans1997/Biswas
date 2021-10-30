@@ -108,7 +108,6 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
                 <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
-                    <span>Quisque tellus risus, adipisci </span>
                     <h2 class="font-normal">Our Work Process </h2>
                 </div>
             </div>
@@ -118,167 +117,28 @@
                 <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
                     <span class="pro-step bottom20">01</span>
                     <p class="fontbold bottom25">Concept</p>
-                    <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
                 <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
                     <span class="pro-step bottom20">02</span>
                     <p class="fontbold bottom25">Plan</p>
-                    <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
                 <li class="whitecolor wow fadeIn" data-wow-delay="500ms">
                     <span class="pro-step bottom20">03</span>
                     <p class="fontbold bottom25">Design</p>
-                    <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
                 <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
                     <span class="pro-step bottom20">04</span>
                     <p class="fontbold bottom25">Development</p>
-                    <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
                 <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
                     <span class="pro-step bottom20">05</span>
                     <p class="fontbold bottom25">Quality Check</p>
-                    <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
             </ul>
         </div>
     </div>
 </section>
 <!--WOrk Process ends-->
-<!-- Our Team-->
-<section id="our-team" class="padding_top half-section-alt teams-border">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="heading-title wow fadeInUp text-center text-md-start" data-wow-delay="300ms">
-                    <span class="defaultcolor">Quisque tellus risus, adipisci</span>
-                    <h2 class="darkcolor bottom30 font-normal">Meet Our Experts</h2>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 text-center text-md-start">
-                <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="ourteam-slider" class="owl-carousel">
-                    <div class="item">
-                        <div class="team-box">
-                            <div class="image">
-                                <img src="images/team-1.jpg" alt="">
-                            </div>
-                            <div class="team-content">
-                                <h4 class="darkcolor">Jessica Twain</h4>
-                                <p>Agency Owner</p>
-                                <ul class="social-icons-simple">
-                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="team-box">
-                            <div class="image">
-                                <img src="images/team-2.jpg" alt="">
-                            </div>
-                            <div class="team-content">
-                                <h4 class="darkcolor">Jason Wudex </h4>
-                                <p>Designer</p>
-                                <ul class="social-icons-simple">
-                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="team-box single">
-                            <div class="image">
-                                <img src="images/team-3.jpg" alt="">
-                            </div>
-                            <div class="team-content">
-                                <h4 class="darkcolor">Jessica Twain</h4>
-                                <p>Agency Owner</p>
-                                <ul class="social-icons-simple">
-                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="team-box">
-                            <div class="image">
-                                <img src="images/team-4.jpg" alt="">
-                            </div>
-                            <div class="team-content">
-                                <h4 class="darkcolor">Hayden Wood</h4>
-                                <p>Marketing</p>
-                                <ul class="social-icons-simple">
-                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="team-box">
-                            <div class="image">
-                                <img src="images/team-1.jpg" alt="">
-                            </div>
-                            <div class="team-content">
-                                <h4 class="darkcolor">Shania Jackson </h4>
-                                <p>Print Media</p>
-                                <ul class="social-icons-simple">
-                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="team-box">
-                            <div class="image">
-                                <img src="images/team-2.jpg" alt="">
-                            </div>
-                            <div class="team-content">
-                                <h4 class="darkcolor">Jessica Twain</h4>
-                                <p>Agency Owner</p>
-                                <ul class="social-icons-simple">
-                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="team-box">
-                            <div class="image">
-                                <img src="images/team-3.jpg" alt="">
-                            </div>
-                            <div class="team-content">
-                                <h4 class="darkcolor">Jessica Twain</h4>
-                                <p>Agency Owner</p>
-                                <ul class="social-icons-simple">
-                                    <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                                    <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                                    <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Our Team ends-->
+
 
 @endsection

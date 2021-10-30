@@ -18,9 +18,17 @@ class FrontendController extends Controller
     {
         return view('services');
     }
+    public function servicesdetail()
+    {
+        return view('services-detail');
+    }
     public function gallery()
     {
         return view('gallery');
+    }
+    public function gallerydetail()
+    {
+        return view('gallery-detail');
     }
     public function contact()
     {

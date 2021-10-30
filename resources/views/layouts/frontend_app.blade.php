@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home | Biswas Poultry & Fish Feed Ltd.</title>
+    <title>Biswas Poultry & Fish Feed Ltd.</title>
     <link href="{{ asset('frontend_asset') }}/images/favicon.png" rel="icon">
     <link rel="stylesheet" href="{{ asset('frontend_asset') }}/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('frontend_asset') }}/css/all.min.css">

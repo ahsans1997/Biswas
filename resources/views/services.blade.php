@@ -63,15 +63,15 @@
                     <div class="image bottom10">
                         <div class="image"><img alt="SEO" src="{{ asset('frontend_asset') }}/images/poultry-feed-1.jpg"></div>
                         <div class="overlay">
-                            <a href="services-detail.html" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
+                            <a href="{{ route('servicedetail') }}" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                     <div class="services-content brand text-center text-md-start">
-                        <h3 class="bottom10 darkcolor"><a href="services-detail.html">Financial Planning</a></h3>
+                        <h3 class="bottom10 darkcolor"><a href="{{ route('servicedetail') }}">Financial Planning</a></h3>
                         <p class="bottom15">Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.
                             Sed ornare ligula Progressively generate synergistic eget.
                         </p>
-                        <a href="services-detail.html" class="button-readmore">Learn More</a>
+                        <a href="{{ route('servicedetail') }}" class="button-readmore">Learn More</a>
                     </div>
                 </div>
             </div>
