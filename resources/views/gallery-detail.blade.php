@@ -18,12 +18,7 @@
         <div class="gradient-bg title-wrap bottom25">
             <div class="row">
                 <div class="col-lg-12 col-md-12 whitecolor">
-                    <h3 class="float-start">Gallery Detail</h3>
-                    <ul class="breadcrumb top10 bottom10 float-end">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Gallery</li>
-                    </ul>
-                </div>
+                    <h3 class="text-center">Gallery Detail</h3>
             </div>
         </div>
     </div>

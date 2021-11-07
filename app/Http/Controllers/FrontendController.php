@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Question;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -36,7 +37,9 @@ class FrontendController extends Controller
     }
     public function faq()
     {
-        return view('faq');
+        return view('faq',[
+            'questions' => Question::where('action', 2)->get(),
+        ]);
     }
     public function news()
     {

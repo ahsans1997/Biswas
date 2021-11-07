@@ -78,7 +78,7 @@
             <div class="cbp-item digital graphics">
                 <div class="services-main">
                     <div class="image bottom10">
-                        <div class="image"><img alt="SEO" src="images/service-2.jpg"></div>
+                        <div class="image"><img alt="SEO" src="{{ asset('frontend_asset') }}/images/poultry-feed-2.png"></div>
                         <div class="overlay">
                             <a href="services-detail.html" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
                         </div>
@@ -95,7 +95,7 @@
             <div class="cbp-item design">
                 <div class="services-main">
                     <div class="image bottom10">
-                        <div class="image"><img alt="SEO" src="images/service-3.jpg"></div>
+                        <div class="image"><img alt="SEO" src="{{ asset('frontend_asset') }}/images/poultry-feed-3.jpg"></div>
                         <div class="overlay">
                             <a href="services-detail.html" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
                         </div>
@@ -112,7 +112,7 @@
             <div class="cbp-item graphics">
                 <div class="services-main">
                     <div class="image bottom10">
-                        <div class="image"><img alt="SEO" src="images/service-4.jpg"></div>
+                        <div class="image"><img alt="SEO" src="{{ asset('frontend_asset') }}/images/poultry-feed-5.jpg"></div>
                         <div class="overlay">
                             <a href="services-detail.html" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
                         </div>
@@ -129,7 +129,7 @@
             <div class="cbp-item digital">
                 <div class="services-main">
                     <div class="image bottom10">
-                        <div class="image"><img alt="SEO" src="images/service-5.jpg"></div>
+                        <div class="image"><img alt="SEO" src="{{ asset('frontend_asset') }}/images/poultry-feed-4.jpg"></div>
                         <div class="overlay">
                             <a href="services-detail.html" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
                         </div>
@@ -146,7 +146,7 @@
             <div class="cbp-item brand design graphics">
                 <div class="services-main">
                     <div class="image bottom10">
-                        <div class="image"><img alt="SEO" src="images/service-6.jpg"></div>
+                        <div class="image"><img alt="SEO" src="{{ asset('frontend_asset') }}/images/poultry-feed-3.jpg"></div>
                         <div class="overlay">
                             <a href="services-detail.html" class="overlay_center border_radius"><i class="fa fa-eye"></i></a>
                         </div>
