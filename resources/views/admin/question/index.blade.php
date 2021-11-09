@@ -17,7 +17,6 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a style="text-decoration: none" href="{{ route('question.index') }}">Question</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Add Question</li>
                 </ol>
             </nav>
         </div>

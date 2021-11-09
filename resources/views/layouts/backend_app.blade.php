@@ -129,6 +129,12 @@
                                 <span class="menu-title">Question</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('contact.index') }}">
+                                <i class="icon-phone menu-icon"></i>
+                                <span class="menu-title">Contact</span>
+                            </a>
+                        </li>
 
                         <li class="nav-item d-none d-lg-block">
                             <a class="nav-link" data-toggle="collapse" href="#sidebar-layouts" aria-expanded="false"
@@ -178,9 +184,7 @@
     <!-- inject:js -->
     <script src="{{ asset('backend_asset') }}/js/off-canvas.js"></script>
     <script src="{{ asset('backend_asset') }}/js/hoverable-collapse.js"></script>
-    <script src="{{ asset('backend_asset') }}/js/misc.js"></script>
     <script src="{{ asset('backend_asset') }}/js/settings.js"></script>
-    <script src="{{ asset('backend_asset') }}/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="{{ asset('backend_asset') }}/js/dashboard.js"></script>

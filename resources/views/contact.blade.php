@@ -43,13 +43,13 @@
                 <div class="col-md-6 col-sm-6 order-sm-2">
                     <div class="contact-meta px-2 text-center text-md-start">
                         <div class="heading-title">
-                            <span class="defaultcolor mb-3">Trax Agency Worldwide</span>
-                            <h2 class="darkcolor font-normal mb-4"><span class="d-none d-md-inline-block">Our</span> Agency Office <span class="d-none d-md-inline-block">In London</span></h2>
+                            <span class="defaultcolor mb-3">Poultry & Fish Feeds Worldwide</span>
+                            <h2 class="darkcolor font-normal mb-4"><span class="d-none d-md-inline-block">Our</span> Office <span class="d-none d-md-inline-block">In Bangladeh</span></h2>
                         </div>
-                        <p class="bottom10">Address: 309, New Cavendish St, EC1Y 3WK</p>
-                        <p class="bottom10">0800 214 5252</p>
+                        <p class="bottom10">Address: Biswas Poultry & Fish Feeds Ltd, Kashimpur, Gazipur, Bangladesh.</p>
+                        <p class="bottom10">+8801907111010</p>
                         <p class="bottom10"><a href="mailto:polpo@traxagency.co.au">polpo@traxagency.co.au</a></p>
-                        <p class="bottom10">Mon-Fri: 9am-5pm</p>
+                        <p class="bottom10">Sat-Thu: 9am-6pm</p>
                         <ul class="social-icons mt-4 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay="300ms">
                             <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
                             <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
@@ -61,26 +61,36 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
+                    @if(session('message'))
+                        <div class="alert alert-success mb-2">{{session('message')}}</div>
+                    @endif
                     <div class="heading-title  wow fadeInUp" data-wow-delay="300ms">
-                        <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+                        <form class="getin_form wow fadeInUp" method="POST" action="{{ route('contact.message') }}">
+                            @csrf
                             <div class="row px-2">
                                 <div class="col-md-12 col-sm-12" id="result1"></div>
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <label for="name1" class="d-none"></label>
-                                        <input class="form-control" id="name1" type="text" placeholder="Name:" required  name="userName">
+                                        @error('username')
+                                            <div class="alert alert-danger mb-2">{{ $message }}</div>
+                                        @enderror
+                                        <input class="form-control" type="text" placeholder="Name:" name="username">
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <label for="email1" class="d-none"></label>
-                                        <input class="form-control" type="email" id="email1" placeholder="Email:" name="email">
+                                        @error('email')
+                                            <div class="alert alert-danger mb-2">{{ $message }}</div>
+                                        @enderror
+                                        <input class="form-control" type="email" placeholder="Email:" name="email">
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <label for="message1" class="d-none"></label>
-                                        <textarea class="form-control" id="message1" placeholder="Message:" required  name="message"></textarea>
+                                        @error('message')
+                                            <div class="alert alert-danger mb-2">{{ $message }}</div>
+                                        @enderror
+                                        <textarea class="form-control" placeholder="Message:"  name="message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-sm-12">
@@ -88,43 +98,6 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-3">
-                <div class="widget text-center top60 w-100">
-                    <div class="contact-box">
-                        <span class="icon-contact defaultcolor"><i class="fas fa-mobile-alt"></i></span>
-                        <p class="bottom0"><a href="tel:+14046000396">+14046000396</a></p>
-                        <p class="d-block"><a href="tel:+43720778972">+43720778972</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="widget text-center top60 w-100">
-                    <div class="contact-box">
-                        <span class="icon-contact defaultcolor"><i class="fas fa-map-marker-alt"></i></span>
-                        <p class="bottom0">123 Street NYC , USA </p>
-                        <p class="d-block">123 Street New Yolo , Austria </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="widget text-center top60 w-100">
-                    <div class="contact-box">
-                        <span class="icon-contact defaultcolor"><i class="far fa-envelope"></i></span>
-                        <p class="bottom0"><a href="mailto:admin@website.com">admin@website.com</a></p>
-                        <p class="d-block"><a href="mailto:email@website.com">email@website.com</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="widget text-center top60 w-100">
-                    <div class="contact-box">
-                        <span class="icon-contact defaultcolor"><i class="far fa-clock"></i></span>
-                        <p class="bottom15">UTC−05:00 <span class="d-block">UTC+01:00</span></p>
                     </div>
                 </div>
             </div>
