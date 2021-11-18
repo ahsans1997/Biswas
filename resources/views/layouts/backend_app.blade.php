@@ -126,8 +126,8 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('news.index') }}">
-                                <i class="icon-notebook menu-icon"></i>
-                                <span class="menu-title">Latest News</span>
+                                <i class="icon-picture menu-icon"></i>
+                                <span class="menu-title">Gallery</span>
                             </a>
                         </li>
 
@@ -141,6 +141,9 @@
                             <a class="nav-link" href="{{ route('contact.index') }}">
                                 <i class="icon-phone menu-icon"></i>
                                 <span class="menu-title">Contact</span>
+                                @if (contact_massage_count() > 0)
+                                    <span class="badge badge-danger">{{ contact_massage_count() }}</span>
+                                @endif
                             </a>
                         </li>
 
