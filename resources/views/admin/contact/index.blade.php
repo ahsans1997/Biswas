@@ -12,7 +12,7 @@
                 </ol>
             </nav>
         </div>
-        <div class="col-md-11">
+        <div class="col-md-11 m-auto">
             <table class="table table-striped">
                 <thead>
                   <tr>

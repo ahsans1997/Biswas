@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\News;
+use App\Models\NewsDetailComment;
 use App\Models\Question;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -31,12 +33,37 @@ class FrontendController extends Controller
 
     public function gallery()
     {
-        return view('gallery');
+        return view('gallery',[
+            'newses' => News::where('action', 2)->orderBy('id', 'DESC')->get(),
+        ]);
     }
 
-    public function gallerydetail()
+    public function gallerydetail($id)
     {
-        return view('gallery-detail');
+        return view('gallery-detail',[
+            'news_details' => News::findOrFail($id),
+            'newses' => News::orderBy('id', 'desc')->limit(5)->get(),
+            'comments' => NewsDetailComment::where('news_detail_id', $id)->get(),
+            'comments_count' => NewsDetailComment::where('news_detail_id', $id)->count(),
+        ]);
+    }
+
+    public function gallerydetailcomment(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'message' => 'required',
+        ]);
+
+        NewsDetailComment::insert([
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message,
+            'news_detail_id' => $request->news_detail_id,
+            'created_at' => Carbon::now(),
+        ]);
+        return back();
     }
 
     //Contact

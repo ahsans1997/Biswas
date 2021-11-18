@@ -38,6 +38,7 @@
 
                 <ul class="navbar-nav">
                     @yield('question')
+                    @yield('news')
                     @yield('dashboard')
 
                 </ul>
@@ -121,6 +122,13 @@
                                             href="pages/layout/horizontal-menu.html">Horizontal Menu</a></li>
                                 </ul>
                             </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('news.index') }}">
+                                <i class="icon-notebook menu-icon"></i>
+                                <span class="menu-title">Latest News</span>
+                            </a>
                         </li>
 
                         <li class="nav-item">

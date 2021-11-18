@@ -20,7 +20,7 @@
                 </ol>
             </nav>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-11 m-auto">
             @if(session('delete'))
                 <div class="alert alert-success mb-2">{{session('delete')}}</div>
             @endif

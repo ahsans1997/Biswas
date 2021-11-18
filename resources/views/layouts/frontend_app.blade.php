@@ -123,29 +123,30 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12">
-                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+                    <form class="getin_form wow fadeInUp"  method="POST" action="{{ route('contact.message') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-md-12 col-sm-12" id="result"></div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
                                     <label for="userName" class="d-none"></label>
-                                    <input class="form-control" type="text" placeholder="First Name:" required id="userName" name="userName">
+                                    <input class="form-control" type="text" placeholder="Name:" required name="username">
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
                                     <label for="companyName" class="d-none"></label>
-                                    <input class="form-control" type="tel" placeholder="Company Name"  id="companyName" name="companyName">
+                                    <input class="form-control" type="email" placeholder="Email:" name="email">
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
                                     <label for="email" class="d-none"></label>
-                                    <input class="form-control" type="email" placeholder="Email:" required id="email" name="email">
+                                    <input class="form-control" type="text" placeholder="Massage:" required name="message">
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                <button type="submit" class="button gradient-btn w-100" id="submit_btn">subscribe</button>
+                                <button type="submit" class="button gradient-btn w-100" id="submit_btn">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -183,7 +184,6 @@
                     <ul class="links">
                         <li><a href="{{ route('index') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About Us</a></li>
-                        <li><a href="{{ route('news') }}">Latest News</a></li>
                         <li><a href="{{ route('service') }}">Service</a></li>
                         <li><a href="{{ route('contact') }}">Contact Us</a></li>
                         <li><a href="">Privacy Policy</a></li>
