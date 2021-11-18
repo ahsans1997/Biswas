@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\Print_;
 use Intervention\Image\Facades\Image;
@@ -52,6 +53,7 @@ class NewsController extends Controller
             'news_details' => $request->news_details,
             'news_quote' => $request->news_quote,
             'action' => 1,
+            'created_at' => Carbon::now(),
         ]);
         if ($request->hasFile('photo')) {
             $upload_photo = $request->file('photo');

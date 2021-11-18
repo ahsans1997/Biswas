@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\ServiceCategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,10 @@ Route::get('faq', [FrontendController::class, 'faq'])->name('faq');
 
 //Dashboard Controller
 Route::middleware(['auth:sanctum', 'verified'])->get('admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+//Service Category Controller
+Route::resource('service-category', ServiceCategoryController::class);
+Route::get('service-category-delete/{id}', [ServiceCategoryController::class, 'delete'])->name('service-category.delete');
 
 // Latest News Controller
 Route::resource('admin/news', NewsController::class);

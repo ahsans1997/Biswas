@@ -40,6 +40,7 @@
                     @yield('question')
                     @yield('news')
                     @yield('dashboard')
+                    @yield('service_category')
 
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
@@ -108,18 +109,13 @@
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false"
                                 aria-controls="page-layouts">
-                                <i class="icon-check menu-icon"></i>
-                                <span class="menu-title">Page Layouts</span>
-                                <span class="badge badge-danger">3</span>
+                                <i class="icon-menu menu-icon"></i>
+                                <span class="menu-title">Service</span>
                             </a>
                             <div class="collapse" id="page-layouts">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link"
-                                            href="pages/layout/boxed-layout.html">Boxed</a></li>
-                                    <li class="nav-item"> <a class="nav-link"
-                                            href="pages/layout/rtl-layout.html">RTL</a></li>
-                                    <li class="nav-item"> <a class="nav-link"
-                                            href="pages/layout/horizontal-menu.html">Horizontal Menu</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="{{ route('service-category.index') }}">Service Category</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/layout/rtl-layout.html">All Service</a></li>
                                 </ul>
                             </div>
                         </li>
