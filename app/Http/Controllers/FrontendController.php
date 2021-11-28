@@ -6,6 +6,9 @@ use App\Models\Contact;
 use App\Models\News;
 use App\Models\NewsDetailComment;
 use App\Models\Question;
+use App\Models\Service;
+use App\Models\ServiceCategory;
+use App\Models\ServiceProductInfo;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -23,12 +26,18 @@ class FrontendController extends Controller
 
     public function services()
     {
-        return view('services');
+        return view('services',[
+            'servicecategories' => ServiceCategory::all(),
+            'services' => Service::all(),
+        ]);
     }
 
-    public function servicesdetail()
+    public function servicesdetail($id)
     {
-        return view('services-detail');
+        return view('services-detail',[
+            'service_detail_info' => Service::findOrFail($id),
+            'service_detail_product_infos' => ServiceProductInfo::where('service_id', $id)->where('action', 2)->get(),
+        ]);
     }
 
     public function gallery()

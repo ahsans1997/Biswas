@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row whitebox top15">
             <div class="col-lg-4 col-md-5">
-                <div class="image widget bottom20"><img alt="SEO" src="images/aboutus.png"></div>
+                <div class="image widget bottom20"><img alt="{{ $service_detail_info->service_title }}" src="{{ asset('photos/service') }}/{{ $service_detail_info->photo }}"></div>
                 <div class="widget heading_space text-center text-md-start">
                     <h4 class="text-capitalize darkcolor bottom20">Need Help?</h4>
                     <div class="contact-table colorone d-table bottom15">
@@ -66,68 +66,19 @@
             </div>
             <div class="col-lg-8 col-md-7">
                 <div class="widget heading_space text-center text-md-start">
-                    <div class="row  align-items-center">
-                        <div class="col-lg-5  col-md-6 padding_top_half text-center text-md-start">
-                            <h2 class="darkcolor font-normal bottom30">The Best Skillset Available in <span class="defaultcolor">Our Market</span> </h2>
-                            <p class="bottom35">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus. </p>
-                        </div>
-                        <div class="col-lg-6 offset-lg-1 col-md-6 padding_top_half">
-                            <div class="progress-bars">
-                                <div class="progress">
-                                    <p>Adobe Photoshop</p>
-                                    <div class="progress-bar gradient-bg" data-value="94">
-                                        <div class="progress-bar gradient-bg whitecolor" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">94%</div>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <p>HTML / WordPress</p>
-                                    <div class="progress-bar gradient-bg" data-value="92">
-                                        <div class="progress-bar gradient-bg whitecolor" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <p>Development</p>
-                                    <div class="progress-bar gradient-bg" data-value="86">
-                                        <div class="progress-bar gradient-bg whitecolor" role="progressbar" style="width: 86%" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">86%</div>
-                                    </div>
-                                </div>
+                    <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">{{ $service_detail_info->service_title }}</span></h2>
+                    <p class="bottom35">{{ $service_detail_info->service_details }}</p>
+                    <br><br><br>
+                    <div class="progress-bars">
+                        @foreach ($service_detail_product_infos as $service_detail_product_info)
+                        <div class="progress">
+                            <p>{{ $service_detail_product_info->service_product_title }}</p>
+                            <div class="progress-bar gradient-bg" data-value="{{ $service_detail_product_info->service_product_percent }}">
+                                <div class="progress-bar gradient-bg whitecolor" role="progressbar" style="width: {{ $service_detail_product_info->service_product_percent }}%" aria-valuenow="{{ $service_detail_product_info->service_product_percent }}" aria-valuemin="0" aria-valuemax="100">{{ $service_detail_product_info->service_product_percent }}%</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 mt-5 mt-md-0">
-                        <form class="getin_form wow fadeInUp" data-wow-delay="400ms">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="First Name:" required id="first_name1" name="first_name">
-                                        <label for="first_name1" class="d-none"></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input class="form-control" type="tel" placeholder="Company Name" id="company-name1">
-                                        <label for="company-name1" class="d-none"></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="Email:" required id="email1" name="email">
-                                        <label for="email1" class="d-none"></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control"  placeholder="Request a FreeConsultation" required id="FreeConsultation1"></textarea>
-                                        <label for="FreeConsultation1" class="d-none"></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <button type="submit" class="button gradient-btn w-100" id="submit_btn1">Free Consultation</button>
-                                </div>
-                            </div>
-                        </form>
+                        @endforeach
+
                     </div>
                 </div>
             </div>

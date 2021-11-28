@@ -43,9 +43,11 @@
                                 <a href="{{ route('service-category.delete', $service_category->id) }}" class="btn btn-danger">Delete</a>
                               </div>
                         </td>
-                      </tr>
+                    </tr>
                     @empty
-
+                    <tr>
+                        <td class="text-danger text-center" colspan="3">No Data Found</td>
+                    </tr>
                     @endforelse
 
                 </tbody>

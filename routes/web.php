@@ -6,6 +6,8 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ServiceCategoryController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ServiceProductInfoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontendController::class, 'index'])->name('index');
 Route::get('about', [FrontendController::class, 'about'])->name('about');
 Route::get('services', [FrontendController::class, 'services'])->name('service');
-Route::get('service-detail', [FrontendController::class, 'servicesdetail'])->name('servicedetail');
+Route::get('service-detail/{id}', [FrontendController::class, 'servicesdetail'])->name('servicedetail');
 Route::get('gallery', [FrontendController::class, 'gallery'])->name('gallery');
 Route::get('gallery-detail/{id}', [FrontendController::class, 'gallerydetail'])->name('gallerydetail');
 Route::post('gallery-detail-comment', [FrontendController::class, 'gallerydetailcomment'])->name('gallerydetailcomment');
@@ -37,8 +39,21 @@ Route::get('faq', [FrontendController::class, 'faq'])->name('faq');
 Route::middleware(['auth:sanctum', 'verified'])->get('admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 //Service Category Controller
-Route::resource('service-category', ServiceCategoryController::class);
-Route::get('service-category-delete/{id}', [ServiceCategoryController::class, 'delete'])->name('service-category.delete');
+Route::resource('admin/service-category', ServiceCategoryController::class);
+Route::get('admin/service-category-delete/{id}', [ServiceCategoryController::class, 'delete'])->name('service-category.delete');
+
+//Service Controller
+Route::resource('admin/service', ServiceController::class);
+Route::get('admin/service/delete/{id}', [ServiceController::class, 'delete'])->name('service.delete');
+Route::get('admin/service/action/{id}', [ServiceController::class, 'action'])->name('service.action');
+
+//Service Product Information Controller
+Route::get('admin/service/info/{id}', [ServiceProductInfoController::class, 'index'])->name('service.info');
+Route::post('admin/service/product/', [ServiceProductInfoController::class, 'store'])->name('service.product.store');
+Route::get('admin/service/product/action/{id}', [ServiceProductInfoController::class, 'action'])->name('service.product.action');
+Route::get('admin/service/product/{id}/edit', [ServiceProductInfoController::class, 'edit'])->name('service.product.edit');
+Route::post('admin/service/product/update/{id}', [ServiceProductInfoController::class, 'update'])->name('service.product.update');
+Route::get('admin/service/product/delete/{id}', [ServiceProductInfoController::class, 'delete'])->name('service.product.delete');
 
 // Latest News Controller
 Route::resource('admin/news', NewsController::class);

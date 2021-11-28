@@ -41,6 +41,7 @@
                     @yield('news')
                     @yield('dashboard')
                     @yield('service_category')
+                    @yield('service')
 
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
@@ -89,9 +90,6 @@
                                     <!--change class online to offline or busy as needed-->
                                 </div>
                                 <div class="profile-name">
-                                    <p class="name">
-                                        Marina Michel
-                                    </p>
                                     <p class="designation">
                                         Super Admin
                                     </p>
@@ -115,15 +113,15 @@
                             <div class="collapse" id="page-layouts">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item"> <a class="nav-link" href="{{ route('service-category.index') }}">Service Category</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="pages/layout/rtl-layout.html">All Service</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="{{ route('service.index') }}">All Service</a></li>
                                 </ul>
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('news.index') }}">
-                                <i class="icon-picture menu-icon"></i>
-                                <span class="menu-title">Gallery</span>
+                                <i class="icon-notebook menu-icon"></i>
+                                <span class="menu-title">Letest News</span>
                             </a>
                         </li>
 
