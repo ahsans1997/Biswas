@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
@@ -37,6 +38,10 @@ Route::get('faq', [FrontendController::class, 'faq'])->name('faq');
 
 //Dashboard Controller
 Route::middleware(['auth:sanctum', 'verified'])->get('admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+//About Controller
+Route::resource('admin/about', AboutController::class);
+
 
 //Service Category Controller
 Route::resource('admin/service-category', ServiceCategoryController::class);

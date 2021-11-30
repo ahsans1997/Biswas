@@ -96,6 +96,7 @@
                                 </div>
                             </div>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('dashboard') }}">
                                 <i class="icon-rocket menu-icon"></i>
@@ -103,6 +104,14 @@
                                 <span class="badge badge-success">New</span>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('about.index') }}">
+                                <i class="icon-organization menu-icon"></i>
+                                <span class="menu-title">About</span>
+                            </a>
+                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false"
