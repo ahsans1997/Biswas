@@ -30,7 +30,7 @@
                     <h2 class="darkcolor font-normal bottom30">Lets take <span class="defaultcolor">Business</span> to Next Level</h2>
                 </div>
                 <p class="bottom35">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus. </p>
-                <a href="#our-team" class="button btnsecondary gradient-btn pagescroll mb-sm-0 mb-4">Learn More</a>
+                <a href="{{ route('about') }}" class="button btnsecondary gradient-btn mb-sm-0 mb-4">Learn More</a>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
                 <div class="image"><img alt="SEO" src="{{ asset('frontend_asset') }}/images/awesome-feature.png"></div>

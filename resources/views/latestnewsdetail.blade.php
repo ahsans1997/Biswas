@@ -57,7 +57,7 @@
                         <div class="post-comment">
                             <h4 class="text-capitalize darkcolor">Add Comment</h4>
                             <br>
-                            <form class="getin_form" id="post-a-comment" method="POST" action="{{ Route('gallerydetailcomment') }}">
+                            <form class="getin_form" id="post-a-comment" method="POST" action="{{ Route('latestNewsDetailComment') }}">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">

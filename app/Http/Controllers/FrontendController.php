@@ -40,16 +40,16 @@ class FrontendController extends Controller
         ]);
     }
 
-    public function gallery()
+    public function latestNews()
     {
-        return view('gallery',[
+        return view('latestnews',[
             'newses' => News::where('action', 2)->orderBy('id', 'DESC')->get(),
         ]);
     }
 
-    public function gallerydetail($id)
+    public function latestNewsDetail($id)
     {
-        return view('gallery-detail',[
+        return view('latestnewsdetail',[
             'news_details' => News::findOrFail($id),
             'newses' => News::orderBy('id', 'desc')->limit(5)->get(),
             'comments' => NewsDetailComment::where('news_detail_id', $id)->get(),
@@ -57,7 +57,7 @@ class FrontendController extends Controller
         ]);
     }
 
-    public function gallerydetailcomment(Request $request)
+    public function latestNewsDetailComment(Request $request)
     {
         $validated = $request->validate([
             'name' => 'required',

@@ -5273,7 +5273,7 @@ ul.rounded li::before{
 .heading .divider-left,
 .heading .divider-center {
     height: 4px;
-    width: 70px;
+    width: 255px;
     background-image: -webkit-gradient(linear, left top, right top, from(#5192e1), color-stop(51%, #23ced5), to(#5192e1));
     display: block;
 }

@@ -47,7 +47,7 @@
                         <a class="nav-link @yield('services')" href="{{ route('service') }}">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @yield('gallery')" href="{{ route('gallery') }}">Gallery</a>
+                        <a class="nav-link @yield('latestNews')" href="{{ route('latestNews') }}">Latest News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @yield('contact')" href="{{ route('contact') }}">Contact</a>
@@ -85,7 +85,7 @@
                         <a class="nav-link @yield('services')" href="{{ route('service') }}">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @yield('gallery')" href="{{ route('gallery') }}">Gallery</a>
+                        <a class="nav-link @yield('latestNews')" href="{{ route('latestNews') }}">Latest News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @yield('contact')" href="{{ route('contact') }}">Contact</a>

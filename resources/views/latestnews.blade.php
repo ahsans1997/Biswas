@@ -1,6 +1,6 @@
 @extends('layouts.frontend_app')
 
-@section('gallery')
+@section('latestNews')
     active
 @endsection
 
@@ -22,7 +22,7 @@
         <div class="gradient-bg title-wrap">
             <div class="row">
                 <div class="col-lg-12 col-md-12 whitecolor">
-                    <h3 class="text-center">Gallery</h3>
+                    <h3 class="text-center">Latest News</h3>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center wow fadeIn top15" data-wow-delay="300ms">
-                <h2 class="heading bottom45 darkcolor font-light2">Our <span class="font-normal">Gallery</span>
+                <h2 class="heading bottom45 darkcolor font-light2">Latest <span class="font-normal">News</span>
                     <span class="divider-center"></span>
                 </h2>
                 <div class="col-md-8 offset-md-2 bottom40">
@@ -49,7 +49,7 @@
                             <div class="gallery-hvr whitecolor">
                                 <div class="center-box">
                                     <a href="{{ asset('photos') }}/news/{{ $news->photo }}" class="opens" data-fancybox="gallery" title="Zoom In"> <i class="fa fa-search-plus"></i></a>
-                                    <a href="{{ route('gallerydetail', $news->id) }}" class="opens" title="View Details"> <i class="fas fa-link"></i></a>
+                                    <a href="{{ route('latestNewsDetail', $news->id) }}" class="opens" title="View Details"> <i class="fas fa-link"></i></a>
                                     <h4 class="w-100">{{ $news->news }}</h4>
                                 </div>
                             </div>
