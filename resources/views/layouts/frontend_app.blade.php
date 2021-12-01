@@ -194,9 +194,10 @@
                 <div class="footer_panel padding_bottom_half bottom20">
                     <h3 class="whitecolor bottom25">Latest News</h3>
                     <ul class="latest_news whitecolor">
-                        <li> <a href="#.">Aenean tristique justo et... </a> <span class="date defaultcolor">15 March 2019</span> </li>
-                        <li> <a href="#.">Phasellus dapibus dictum augue... </a> <span class="date defaultcolor">15 March 2019</span> </li>
-                        <li> <a href="#.">Mauris blandit vitae. Praesent non... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                        @foreach (latestNews() as $latestnews)
+
+                        @endforeach
+                        <li> <a href="#.">{{ $latestnews->news }}</a> <span class="date defaultcolor">{{ date('d M, Y - H:i', strtotime($latestnews->time)) }}</span> </li>
                     </ul>
                 </div>
             </div>
@@ -205,9 +206,8 @@
                     <h3 class="whitecolor bottom25">Business hours</h3>
                     <p class="whitecolor bottom25">Our support available to help you 24 hours a day, seven days week</p>
                     <ul class="hours_links whitecolor">
-                        <li><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
-                        <li><span>Friday:</span> <span>09:00-21:00</span></li>
-                        <li><span>Sunday:</span> <span>09:00-20:00</span></li>
+                        <li><span>Saturday-Thursday:</span> <span>9.00-19.00</span></li>
+                        <li><span>Friday:</span> <span>Close</span></li>
                         <li><span>Calendar Events:</span> <span>24-Hour Shift</span></li>
                     </ul>
                 </div>

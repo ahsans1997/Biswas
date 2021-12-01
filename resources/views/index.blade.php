@@ -27,9 +27,9 @@
         <div class="row d-flex align-items-center">
             <div class="col-lg-6 col-md-7 col-sm-7 text-sm-start text-center wow fadeInLeft" data-wow-delay="300ms">
                 <div class="heading-title mb-4">
-                    <h2 class="darkcolor font-normal bottom30">Lets take <span class="defaultcolor">Business</span> to Next Level</h2>
+                    <h2 class="darkcolor font-normal bottom30 defaultcolor">{{ $about->title }}</h2>
                 </div>
-                <p class="bottom35">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus. </p>
+                <p class="bottom35">{{ Str::limit($about->about, 400) }}</p>
                 <a href="{{ route('about') }}" class="button btnsecondary gradient-btn mb-sm-0 mb-4">Learn More</a>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
@@ -74,26 +74,12 @@
         </div>
         <div class="row">
             <ul class="process-wrapp">
-                <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
-                    <span class="pro-step bottom20">01</span>
-                    <p class="fontbold bottom25">Concept</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
-                    <span class="pro-step bottom20">02</span>
-                    <p class="fontbold bottom25">Plan</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="500ms">
-                    <span class="pro-step bottom20">03</span>
-                    <p class="fontbold bottom25">Design</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
-                    <span class="pro-step bottom20">04</span>
-                    <p class="fontbold bottom25">Development</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
-                    <span class="pro-step bottom20">05</span>
-                    <p class="fontbold bottom25">Check</p>
-                </li>
+                @foreach (workProcess() as $workprocess)
+                    <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                        <span class="pro-step bottom20">0{{ $loop->index + 1 }}</span>
+                        <p class="fontbold bottom25">{{ $workprocess->name }}</p>
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>
@@ -113,19 +99,17 @@
         </div>
     </div>
     <div class="container">
-        <div class="owl-carousel" id="testimonial-slider">
-            <div class="item testi-box">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-12 text-center">
-                        <div class="testimonial-round d-inline-block">
-                            <img src="{{ asset('frontend_asset') }}/images/mohsin.jpg" alt="">
-                        </div>
-                        <h4 class="defaultcolor font-light top15"><a>MD IFTEAKHARUL HAQUE</a></h4>
-                        <p>Dhaka, Bangladesh</p>
+        <div class="item testi-box">
+            <div class="row align-items-center" style="margin-top: -96px;">
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="testimonial-round d-inline-block">
+                        <img src="{{ asset('frontend_asset') }}/images/mohsin.jpg" alt="">
                     </div>
-                    <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-start text-center">
-                        <p class="bottom15 top90">We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we boast a years and years of service.</p>
-                    </div>
+                    <h4 class="defaultcolor font-light top15"><a>MD IFTEAKHARUL HAQUE</a></h4>
+                    <p>Dhaka, Bangladesh</p>
+                </div>
+                <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-start text-center">
+                    <p class="bottom15 top90">We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we boast a years and years of service.</p>
                 </div>
             </div>
         </div>

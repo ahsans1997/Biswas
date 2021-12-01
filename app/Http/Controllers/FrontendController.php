@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Contact;
 use App\Models\News;
 use App\Models\NewsDetailComment;
@@ -16,12 +17,16 @@ class FrontendController extends Controller
 {
     public function index()
     {
-        return view('index');
+        return view('index',[
+            'about' => About::findOrFail(1),
+        ]);
     }
 
     public function about()
     {
-        return view('about');
+        return view('about',[
+            'about' => About::findOrFail(1),
+        ]);
     }
 
     public function services()

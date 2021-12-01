@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class ServiceProductInfoController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index($id)
     {
         return view('admin.service.product_info_create',[

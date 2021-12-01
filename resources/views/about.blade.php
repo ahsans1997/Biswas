@@ -35,17 +35,17 @@
     <div class="container aboutus">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
-                <div class="image"><img alt="SEO" src="images/aboutus.png"></div>
+                <div class="image"><img alt="SEO" src="{{ asset('photos/about') }}/{{ $about->photo }}"></div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-start">
-                <h2 class="darkcolor font-normal bottom30">Lets take your <span class="defaultcolor">Business</span> to Next Level</h2>
-                <p class="bottom35">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus. </p>
+                <h2 class="darkcolor font-normal bottom30 defaultcolor">{{ $about->title }}</h2>
+                <p class="bottom35">{{ $about->about }}</p>
             </div>
         </div>
         <div class="row  align-items-center">
             <div class="col-md-12 padding_top_half text-center text-md-start">
-                <h2 class="darkcolor font-normal bottom30">The Best Skillset Available in <span class="defaultcolor">Our Market</span> </h2>
-                <p class="bottom35">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus. </p>
+                <h2 class="darkcolor font-normal bottom30 defaultcolor text-center" style="border-bottom: 1px solid; padding-bottom: 10px;">{{ $about->bigtitle }}</h2>
+                <p class="bottom35">{{ $about->bigabout }}</p>
             </div>
         </div>
     </div>
@@ -63,26 +63,12 @@
         </div>
         <div class="row">
             <ul class="process-wrapp">
-                <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
-                    <span class="pro-step bottom20">01</span>
-                    <p class="fontbold bottom25">Concept</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
-                    <span class="pro-step bottom20">02</span>
-                    <p class="fontbold bottom25">Plan</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="500ms">
-                    <span class="pro-step bottom20">03</span>
-                    <p class="fontbold bottom25">Design</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
-                    <span class="pro-step bottom20">04</span>
-                    <p class="fontbold bottom25">Development</p>
-                </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
-                    <span class="pro-step bottom20">05</span>
-                    <p class="fontbold bottom25">Quality Check</p>
-                </li>
+                @foreach (workProcess() as $workprocess)
+                    <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                        <span class="pro-step bottom20">0{{ $loop->index + 1 }}</span>
+                        <p class="fontbold bottom25">{{ $workprocess->name }}</p>
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>

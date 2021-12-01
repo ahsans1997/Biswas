@@ -42,6 +42,7 @@
                     @yield('dashboard')
                     @yield('service_category')
                     @yield('service')
+                    @yield('workprocess')
 
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
@@ -125,6 +126,13 @@
                                     <li class="nav-item"> <a class="nav-link" href="{{ route('service.index') }}">All Service</a></li>
                                 </ul>
                             </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('work-process.index') }}">
+                                <i class="icon-directions menu-icon"></i>
+                                <span class="menu-title">Work Process</span>
+                            </a>
                         </li>
 
                         <li class="nav-item">

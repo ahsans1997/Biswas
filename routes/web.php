@@ -9,6 +9,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ServiceCategoryController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ServiceProductInfoController;
+use App\Http\Controllers\WorkProcessController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,6 +43,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('admin/dashboard', [Dashboa
 //About Controller
 Route::resource('admin/about', AboutController::class);
 
+//Work Process Controller
+Route::resource('admin/work-process', WorkProcessController::class);
+Route::get('admin/work-process/delete/{id}', [WorkProcessController::class, 'delete'])->name('work-process.delete');
+Route::get('admin/work-process/action/{id}', [WorkProcessController::class, 'action'])->name('work-process.action');
 
 //Service Category Controller
 Route::resource('admin/service-category', ServiceCategoryController::class);
