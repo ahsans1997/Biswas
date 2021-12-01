@@ -49,7 +49,14 @@
                     data-toggle="offcanvas">
                     <span class="icon-menu"></span>
                 </button>
+                <div class="logout" style="float: right">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Sign Out</button>
+                    </form>
+                </div>
             </div>
+
         </nav>
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
