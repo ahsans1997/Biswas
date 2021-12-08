@@ -16,7 +16,6 @@
                     <h2 class="font-xlight">A New Idea</h2>
                     <h2 class="font-bold">Inspires Us To Make</h2>
                     <h2 class="font-xlight">Great Works</h2>
-                    <h3 class="font-light pt-2">The Best Multipurpose Template In Market</h3>
                 </div>
             </div>
         </div>

@@ -15,7 +15,6 @@
                     <h2 class="font-xlight pt-3">We Help To</h2>
                     <h2 class="font-bold">Elevate Your Business</h2>
                     <h2 class="font-xlight">To Next Level</h2>
-                    <h3 class="font-light pb-4 pt-2">The Best Multipurpose Template in Market</h3>
                 </div>
             </div>
         </div>

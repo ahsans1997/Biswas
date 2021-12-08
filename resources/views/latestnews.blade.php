@@ -14,8 +14,7 @@
                 <div class="page-titles whitecolor text-center padding_top padding_bottom">
                     <h2 class="font-xlight">Welcome</h2>
                     <h2 class="font-bold">To Our Portfolio Work</h2>
-                    <h2 class="font-xlight">Let's Build</h2>
-                    <h3 class="font-light pt-2">It More Creative With Your Slight Attention</h3>
+                    <h2 class="font-xlight">Let's See</h2>
                 </div>
             </div>
         </div>
